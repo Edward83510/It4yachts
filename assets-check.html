@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"><title>Assets Check</title>
+<style>body{font:16px/1.6 system-ui;padding:20px} .ok{color:green} .fail{color:#b91c1c}</style>
+<script>
+function probe(id, src){
+  const img=new Image(); const el=document.getElementById(id);
+  img.onload=()=>{el.textContent='OK'; el.className='ok'};
+  img.onerror=()=>{el.textContent='MISSING (404)'; el.className='fail'};
+  img.src=src;
+}
+window.onload=function(){
+  probe('logo','assets/logo-it4yachts.jpg');
+  probe('hero','assets/hero-superyacht.jpg');
+  probe('top','assets/gallery-topdown.jpg');
+  probe('bow','assets/gallery-bow-night.jpg');
+};
+</script>
+</head><body>
+<h1>Assets Check</h1>
+<p>This page tests whether each file exists next to your <code>index.html</code> in an <code>assets/</code> folder.</p>
+<ul>
+  <li>logo-it4yachts.jpg — <strong id="logo">…</strong></li>
+  <li>hero-superyacht.jpg — <strong id="hero">…</strong></li>
+  <li>gallery-topdown.jpg — <strong id="top">…</strong></li>
+  <li>gallery-bow-night.jpg — <strong id="bow">…</strong></li>
+</ul>
+<p>If any show MISSING (404), ensure your folder structure is:<br>
+<code>/public_html/index.html</code> and <code>/public_html/assets/(the four files)</code>.</p>
+</body></html>

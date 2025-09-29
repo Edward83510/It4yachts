@@ -1,0 +1,11 @@
+/* Site styles */
+
+/* === Added by ChatGPT: two-column split for Brands & Contact vs Bow image === */
+.split-wrap{display:grid;grid-template-columns:1.1fr 0.9fr;gap:2rem;align-items:start}
+.split-wrap .split-left section{margin-bottom:2rem}
+.split-wrap .split-right img{max-width:100%;height:auto;border-radius:12px;object-fit:cover}
+@media (max-width: 900px){
+  .split-wrap{grid-template-columns:1fr;gap:1.25rem}
+  .split-right{order:2}
+  .split-left{order:1}
+}

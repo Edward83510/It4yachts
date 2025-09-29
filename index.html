@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>IT4.YACHTS — Super‑Yacht IT Services</title>
+  <meta name="description" content="High‑end IT services for super‑yachts: Kerio Control, wired & Wi‑Fi networks, servers, email, cybersecurity, CCTV." />
+  <link rel="icon" href="assets/logo-it4yachts.jpg" />
+  <style>
+    :root{ --bg:#0b1220; --bg-2:#0f172a; --fg:#e5e7eb; --muted:#94a3b8;
+      --acc:#38bdf8; --acc-2:#22d3ee; --card:#111827; --radius:18px; --shadow:0 10px 30px rgba(2,8,23,.35); --max:1100px; }
+    *{box-sizing:border-box} html,body{margin:0;padding:0;background:linear-gradient(180deg,var(--bg),var(--bg-2));color:var(--fg);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,'Noto Sans','Helvetica Neue',Arial,sans-serif}
+    a{color:var(--acc);text-decoration:none} a:hover{filter:brightness(1.2)}
+    img{max-width:100%;height:auto}
+    .container{max-width:var(--max);margin:auto;padding:0 20px}
+    header.nav{position:sticky;top:0;background:rgba(11,18,32,.7);backdrop-filter:blur(10px);border-bottom:1px solid rgba(148,163,184,.15);z-index:20}
+    .nav-inner{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 0}
+    .brand{display:flex;align-items:center;gap:12px;font-weight:700;letter-spacing:.2px}
+    .brand img{height: 168px;width:auto;border-radius:6px}
+    .nav-links a{margin-left:18px;opacity:.9}
+    .nav-links a.btn{padding:10px 16px;border:1px solid rgba(148,163,184,.35);border-radius:999px}
+    .hero{padding:0;position:relative}
+    .hero img.bg{width:100%;height:52vh;object-fit:cover;display:block;opacity:.9;filter:saturate(1.1) contrast(1.05)}
+    .hero .overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(2,6,23,.2),rgba(2,6,23,.65) 55%,rgba(2,6,23,.92))}
+    .hero .content{position:absolute;bottom:0;left:0;right:0;padding:30px 20px 36px}
+    .hero h1{font-size:clamp(26px,4vw,44px);line-height:1.1;margin:0 0 8px}
+    .hero p{color:var(--muted);margin:0 0 16px}
+    .cta-row{display:flex;gap:12px;flex-wrap:wrap}
+    .btn{display:inline-flex;align-items:center;gap:10px;padding:12px 18px;border-radius:999px;border:1px solid rgba(148,163,184,.35)}
+    .btn.primary{background:linear-gradient(135deg,var(--acc),var(--acc-2));color:#081018;border:none;font-weight:700}
+    section{padding:48px 0}
+    .section-title{font-size:clamp(22px,3vw,30px);margin:0 0 10px}
+    .muted{color:var(--muted)}
+    .features{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    @media(max-width:900px){.features{grid-template-columns:1fr}}
+    .feature{padding:18px;border-radius:16px;border:1px solid rgba(148,163,184,.15);background:rgba(17,24,39,.55)}
+    .feature h3{margin:8px 0 6px;font-size:18px}
+    .gallery{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    .split{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:center}
+    @media(max-width:900px){.split{grid-template-columns:1fr}}
+    .bow-img{width:100%;max-width:520px;border-radius:12px;display:block;margin:0 auto}
+    @media(max-width:900px){.gallery{grid-template-columns:1fr}}
+    footer{padding:28px 0;border-top:1px solid rgba(148,163,184,.15);color:var(--muted)}
+    .foot{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+  </style>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <div class="brand">
+        <img src="assets/logo-it4yachts.jpg" alt="IT4.Yachts logo" />
+        <span>IT4.YACHTS</span>
+      </div>
+      <nav class="nav-links">
+        <a href="#services">Services</a>
+        <a href="#brands">Partners</a>
+        <a href="#brand-contact" class="btn">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <img class="bg" src="assets/hero-superyacht.jpg" alt="Superyacht at sunset" />
+    <div class="overlay"></div>
+    <div class="content container">
+      <h1>High‑End IT Solutions for Super‑Yachts</h1>
+      <p>Secure onboard networks, multiple internet interface connectivity, and expert Kerio Control support — delivered anywhere your vessel sails.</p>
+      <div class="cta-row">
+        <a class="btn primary" href="#brand-contact">Talk to Ed</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="container">
+      <h2 class="section-title">Services</h2>
+      <div class="features">
+        <div class="feature"><h3>Kerio Control Guru</h3><p>Onboard Kerio firewall configuration and optimisation for super-yachts - dependable performance, rigorous security and clear data oversight.</p></div>
+        <div class="feature"><h3>Wired & Wi‑Fi Networks</h3><p>Design • Supply • Installation • Maintenance • Support.</p></div>
+        <div class="feature"><h3>Network Troubleshooting</h3><p>Rapid network and VLAN diagnostics — fix connectivity issues, and optimise the yacht’s network performance.</p></div>
+        <div class="feature"><h3>Email Support & Hosting</h3><p>Hosted Exchange / M365 migrations, SPF/DKIM/DMARC hardening.</p></div>
+        <div class="feature"><h3>Cybersecurity Audits</h3><p>Best‑practice hardening for email and network security.</p></div>
+        <div class="feature"><h3>Desktop PCs & Windows Server</h3><p>Supply • Maintenance • Support.</p></div>
+        <div class="feature"><h3>CCTV</h3><p>Supply • Maintenance • Support.</p></div>
+      </div>
+    </div>
+  
+  
+
+  
+  <section id="brand-contact">
+    <div class="container split">
+      <div class="split-wrap">
+<div class="split-left">
+<div>
+        <h2 class="section-title">Brands & Partners</h2>
+        <p class="muted">GFI Kerio Control • Netgear • Ruckus • Cisco • Unifi • Axis • Lenovo • Synology • Pepwave</p>
+        <h2 class="section-title" style="margin-top:24px">Contact</h2>
+        <p><strong>Email:</strong> <a href="mailto:ed@it4.yachts">ed@it4.yachts  </a></p>
+        <p><strong>Phone:</strong> <a href="tel:+33 6 26 98 03 12">+33 6 26 98 03 12 </a></p>
+      </div>
+<section id="brand-contact">
+    <div class="container split">
+      <div>
+      </div>
+    </div>
+  </section>
+</div>
+<div class="split-right">
+</div>
+</div>
+      <div>
+        <img class="bow-img" src="assets/gallery-bow-night.jpg" alt="Superyacht bow at night (reduced size)" />
+      </div>
+    </div>
+  </section>
+
+</section>
+
+  
+
+  
+
+  
+
+  <footer>
+    <div class="container foot">
+      <small>© <span id="y"></span> IT4.YACHTS. All rights reserved.</small>
+      <small>Built as a single HTML file.</small>
+    </div>
+  </footer>
+
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
